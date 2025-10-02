@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: telegram-casino-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        value: "5001575342:AAF-wnZ-bdTaqRG_LiwP6BuEBaBKFRCdM1w/test"
